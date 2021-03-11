@@ -3,25 +3,36 @@
 
 # bayeslincom
 
+<!-- hex sticker -->
+
+<img src="inst/figures/hex_sticker.png" width = 250 />
+
+<!-- ![](inst/figures/hex_sticker.png) -->
+
 <!-- badges: start -->
 
-![lifecycle](man/figures/lifecycle-experimental.svg) [![Build
+[![CRAN
+Version](http://www.r-pkg.org/badges/version/bayeslincom)](https://cran.r-project.org/package=bayeslincom)
+[![Downloads](https://cranlogs.r-pkg.org/badges/bayeslincom)](https://cran.r-project.org/package=bayeslincom)
+[![Build
 Status](https://travis-ci.org/josue-rodriguez/bayeslincom.svg?branch=master)](https://travis-ci.org/josue-rodriguez/bayeslincom)
+
 <!-- badges: end -->
 
 The goal of **bayeslincom** is to provide point estimates, standard
 deviations, and credible intervals for linear combinations of posterior
-samples. Additionally, it allows for ROPE tests.
+samples. Additionally, it allows for testing against using null values
+using a region of practical equivalence (ROPE) approach (Kruschke and
+Liddell 2018).
 
 ## Installation
 
-<!-- You can install the released version of bayeslincom from [CRAN](https://CRAN.R-project.org) with: -->
+You can install the released version of bayeslincom from
+[CRAN](https://CRAN.R-project.org) with:
 
-<!-- ``` r -->
-
-<!-- install.packages("bayeslincom") -->
-
-<!-- ``` -->
+``` r
+install.packages("bayeslincom")
+```
 
 The development version from [GitHub](https://github.com/) with:
 
@@ -283,12 +294,12 @@ approach wherein a parameter value is rejected if it is not covered by a
 confidence interval at a particular level. The difference with the ROPE
 is that the null value is only rejected if there is no overlap between
 the credible interval and the ROPE. Conversely, the null value is only
-accepted if the entire credible interval is inside the ROPE\>
+accepted if the entire credible interval is inside the ROPE.
 
 In the following example, a model is fit using
 [**rstanarm**](https://github.com/stan-dev/rstanarm). The difference
 between the coefficients for `mom_iq` an `mom_age` is tested against a
-null value of zero with a ROPE corresponding to \[-1, 1\]
+null value of zero with a ROPE corresponding to \[-1, 1\].
 
 ``` r
 library(rstanarm)

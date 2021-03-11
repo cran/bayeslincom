@@ -16,9 +16,9 @@
 #'colnames(Y) <- letters[1:20]
 #'est <- BGGM::estimate(Y)
 #'bggm_comb <- lin_comb("a--c + a--d > b--c + b--d",
-#'                     obj = est,
-#'                     cri_level = 0.90,
-#'                     rope = c(-0.1, 0.1))
+#'                       obj = est,
+#'                       ci = 0.90,
+#'                       rope = c(-0.1, 0.1))
 #'plot(bggm_comb)
 #' @importFrom  ggplot2 ggplot aes_string geom_histogram geom_point geom_segment
 #'                      geom_vline facet_wrap
@@ -37,7 +37,7 @@ plot.bayeslincom <- function(x,
   res <- x$results
 
   # Extract & clean means + CrI dat a
-  raw_cri <- extract_list_items(res, "cri", as_df = TRUE)
+  raw_cri <- extract_list_items(res, "ci", as_df = TRUE)
   raw_means <- extract_list_items(res, "mean_samples", as_df = TRUE)
   raw_means$comb <- row.names(raw_means)
   names(raw_means) <- c("mean", "comb")

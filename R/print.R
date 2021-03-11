@@ -8,14 +8,14 @@
 print.bayeslincom <- function(x, ...) {
   res <- x$results
 
-  cri_raw <- extract_list_items(res, "cri")
+  cri_raw <- extract_list_items(res, "ci")
   cri <- round(cri_raw, 2)
 
   Post.mean_raw <- extract_list_items(res, "mean_samples")
   Post.mean <- round(Post.mean_raw, 2)
 
   Post.sd_raw <- extract_list_items(res, "sd_samples")
-  Post.sd <- round(Post.mean_raw, 2)
+  Post.sd <- round(Post.sd_raw, 2)
 
   print_df <- data.frame(
     Post.mean = Post.mean,
