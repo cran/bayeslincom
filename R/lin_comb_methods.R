@@ -152,9 +152,9 @@ lin_comb.bbcor <- function(lin_comb,
                            rope = NULL,
                            contrast = NULL) {
 
-  if(!requireNamespace("BBcor", quietly = TRUE)) {
-    stop("Please install the BBcor package.")
-  }
+  # if(!requireNamespace("BBcor", quietly = TRUE)) {
+  #   stop("Please install the BBcor package.")
+  # }
 
   all_vars <- extract_var_names(obj)
 

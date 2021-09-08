@@ -1,10 +1,10 @@
-13d31e01404dd54d68ed6ddd423b2ad0 *DESCRIPTION
+6ac4e9fe04937767b8a23aa79cd36f08 *DESCRIPTION
 e71dd0ae4e9d34c6395d78cf12479790 *NAMESPACE
 cfa9398fdb5135ec5b0d8b54d729fd07 *NEWS.md
 012cfdd5fce761139d17780bd3144301 *R/helpers.R
-922c26ac8883b0b96aad4dc174677cb0 *R/lin_comb.R
-50e9645a515451783dbb3ee0390bffa2 *R/lin_comb_methods.R
-00d3ab649d0c3298844983396f0d8153 *R/plot.R
+26dca412e70e6cff49974050f4eb08d5 *R/lin_comb.R
+a4c3f4f20b56591d7bda0e6d37513657 *R/lin_comb_methods.R
+f8329e742ff8890b511dff0cc410c051 *R/plot.R
 6b85b4194112267404487c3699ac3cd6 *R/print.R
 74330398c6f71480b5ec76e695314791 *README.md
 274b378c705e49925825a2ef4132f9da *inst/figures/hex_plot.png
@@ -21,8 +21,8 @@ c3978703d8f40f2679795335715e98f4 *man/figures/lifecycle-experimental.svg
 6902bbfaf963fbc4ed98b86bda80caa2 *man/figures/lifecycle-soft-deprecated.svg
 53b3f893324260b737b3c46ed2a0e643 *man/figures/lifecycle-stable.svg
 1c1fe7a759b86dc6dbcbe7797ab8246c *man/figures/lifecycle-superseded.svg
-6c97f904e8259c2917b3be3e7ed2056d *man/lin_comb.Rd
-830f8a99f8561ad499741ed87d1d7cec *man/plot.bayeslincom.Rd
+cf78acc462144de490ff32106900793f *man/lin_comb.Rd
+41e7fa4b30d7652950460e2180616f80 *man/plot.bayeslincom.Rd
 8f2169a233f5d17869008dd727a9d443 *man/print.bayeslincom.Rd
 772d9aff64ad6c7134c6d931ffc36977 *tests/testthat.R
 1a200ad495392f8a2aee3bfc7b45c543 *tests/testthat/test-lin_comb.R
